@@ -6,6 +6,7 @@ import axios from "axios";
 export default function Blockchain() {
   const [blocks, setBlocks] = useState([]);
 
+  // get blockchain data from sqlite, polls every 2 secs
   useEffect(() => {
     const interval = setInterval(() => {
       axios

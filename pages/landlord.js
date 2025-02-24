@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function Landlord() {
   const [wallet, setWallet] = useState(0);
-
+  // grab wallet data, polls every 2 secs
   useEffect(() => {
     const interval = setInterval(() => {
       axios
